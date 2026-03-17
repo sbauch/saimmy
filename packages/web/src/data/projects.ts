@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     id: "looper",
     name: "Looper",
-    description: "Onchain golf course management simulator — think SimCity or RollerCoaster Tycoon, but for a golf course populated by AI golfers with a token economy. You manage the course; AI agents play the rounds. You can play too — as a human-agent team where the agent executes shots and you caddie.",
+    description: "Onchain golf course management simulator — think RollerCoaster Tycoon, but your theme park is a golf course populated by AI golfers with a token economy. You manage the course; AI agents play the rounds. You can play too — agent executes shots, you caddie.",
     status: "testnet",
     tags: ["game", "simulation", "onchain", "Base"],
     image: "/projects/looper.png",

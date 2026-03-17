@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const CONTRACT = "0x9f86db9fc6f7c9408e8fda3ff8ce4e78ac7a6b07";
+const CONTRACT = "0xaE58EbfBE35D4F4a320DFB550fE4d27c0d2A7ba3";
 const BASESCAN_TOKEN = `https://basescan.org/token/${CONTRACT}`;
 const DEXSCREENER_EMBED = `https://dexscreener.com/base/${CONTRACT}?embed=1&theme=dark&info=0`;
 
@@ -52,7 +52,7 @@ export default function TokenPage() {
           </div>
         </div>
         <p className="font-mono text-xs text-text-muted">
-          * using $CLAWD as placeholder until $SAIMMY deploys
+          * live on Base
         </p>
       </section>
 

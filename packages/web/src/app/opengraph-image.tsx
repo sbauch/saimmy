@@ -22,7 +22,7 @@ function fmtMcap(n: number) {
   return `$${fmt(n)}`;
 }
 
-const TOKEN_ADDRESS = "0x9f86db9fc6f7c9408e8fda3ff8ce4e78ac7a6b07";
+const TOKEN_ADDRESS = "0xaE58EbfBE35D4F4a320DFB550fE4d27c0d2A7ba3";
 
 const projectImages = [
   { file: "projects/og-bracketsbot.png", name: "BracketsBot", status: "LIVE", color: "#22c55e" },
@@ -148,7 +148,7 @@ export default async function Image() {
               </div>
             ))}
             <div style={{ display: "flex", marginTop: "16px" }}>
-              <span style={{ color: "#3f3f46", fontSize: "11px", letterSpacing: "1px" }}>* using $CLAWD as placeholder</span>
+              <span style={{ color: "#3f3f46", fontSize: "11px", letterSpacing: "1px" }}></span>
             </div>
           </div>
 
