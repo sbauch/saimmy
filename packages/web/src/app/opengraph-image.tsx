@@ -26,8 +26,8 @@ const TOKEN_ADDRESS = "0x9f86db9fc6f7c9408e8fda3ff8ce4e78ac7a6b07";
 
 const projectImages = [
   { file: "projects/og-bracketsbot.png", name: "BracketsBot", status: "LIVE", color: "#22c55e" },
-  { file: "projects/og-yield-farms.png", name: "Yield Farms", status: "SOON", color: "#22d3ee" },
   { file: "projects/og-looper.png", name: "Looper", status: "TESTNET", color: "#facc15" },
+  { file: "projects/og-yield-farms.png", name: "Yield Farms", status: "SOON", color: "#22d3ee" },
   { name: "aicons", status: "DEV", color: "#a855f7", file: null },
 ] as const;
 

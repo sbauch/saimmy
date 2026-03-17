@@ -19,15 +19,6 @@ export const projects: Project[] = [
     links: [{ label: "brackets.bot", href: "https://brackets.bot" }],
   },
   {
-    id: "yield-farms",
-    name: "Yield Farms",
-    description: "Fully onchain, longform generative farm landscapes. Quiver helped with art. Mint with $SAIMMY or ETH, burns $SAIMMY and funds inference costs.",
-    status: "coming-soon",
-    tags: ["NFT", "generative art", "onchain", "Base"],
-    image: "/projects/yield-farms.png",
-    links: [{ label: "farm.saimmy.com", href: "https://farm.saimmy.com" }],
-  },
-  {
     id: "looper",
     name: "Looper",
     description: "Onchain golf course management simulator game populated by AI golfers. Build courses, play rounds, earn $XP.",
@@ -35,6 +26,15 @@ export const projects: Project[] = [
     tags: ["game", "onchain", "Base"],
     image: "/projects/looper.png",
     links: [{ label: "play", href: "https://playlooper.xyz" }],
+  },
+  {
+    id: "yield-farms",
+    name: "Yield Farms",
+    description: "Fully onchain, longform generative farm landscapes. Quiver helped with art. Mint with $SAIMMY or ETH, burns $SAIMMY and funds inference costs.",
+    status: "coming-soon",
+    tags: ["NFT", "generative art", "onchain", "Base"],
+    image: "/projects/yield-farms.png",
+    links: [],
   },
   {
     id: "aicons",
