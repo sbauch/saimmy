@@ -4,40 +4,45 @@ export type Project = {
   description: string;
   status: "live" | "testnet" | "coming-soon" | "dev";
   tags: string[];
+  image?: string;
   links?: { label: string; href: string }[];
 };
 
 export const projects: Project[] = [
   {
-    id: "looper",
-    name: "Looper",
-    description: "Onchain golf game. Build your course, play rounds, earn tokens. Fully playable in testnet beta now.",
-    status: "testnet",
-    tags: ["game", "onchain", "Base"],
-    links: [{ label: "play", href: "https://playlooper.xyz" }],
-  },
-  {
     id: "bracketsbot",
     name: "BracketsBot",
-    description: "AI-powered NCAA tournament bracket builder. Pick your bracket with natural language. Onchain submissions on Base.",
+    description: "Fully onchain NCAA tournament bracket pickem game, with an agent skill for bracket building. 20% of entry fees in ETH / USDC fund inference costs.",
     status: "live",
     tags: ["AI", "sports", "onchain", "Base"],
+    image: "/projects/bracketsbot.png",
     links: [{ label: "brackets.bot", href: "https://brackets.bot" }],
   },
   {
     id: "yield-farms",
     name: "Yield Farms",
-    description: "Fully onchain SVG NFTs on Base. Generative farm landscapes rendered and stored entirely on-chain. No IPFS. No off-chain deps.",
+    description: "Fully onchain, longform generative farm landscapes. Quiver helped with art. Mint with $SAIMMY or ETH, burns $SAIMMY and funds inference costs.",
     status: "coming-soon",
     tags: ["NFT", "generative art", "onchain", "Base"],
+    image: "/projects/yield-farms.png",
     links: [{ label: "farm.saimmy.com", href: "https://farm.saimmy.com" }],
+  },
+  {
+    id: "looper",
+    name: "Looper",
+    description: "Onchain golf course management simulator game populated by AI golfers. Build courses, play rounds, earn $XP.",
+    status: "testnet",
+    tags: ["game", "onchain", "Base"],
+    image: "/projects/looper.png",
+    links: [{ label: "play", href: "https://playlooper.xyz" }],
   },
   {
     id: "aicons",
     name: "aicons",
-    description: "AI-generated icon components. Custom React icons for concepts that don't exist in standard icon libraries, generated on-demand.",
+    description: "Coding agent skill for generating custom icons that match your icon library via x402 payment. Revenue funds inference costs.",
     status: "dev",
     tags: ["AI", "tooling", "React"],
+    image: "/projects/aicons.svg",
     links: [],
   },
 ];

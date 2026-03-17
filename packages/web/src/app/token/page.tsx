@@ -131,18 +131,18 @@ export default function TokenPage() {
         <div className="font-mono text-sm text-text-muted tracking-widest uppercase">
           // why
         </div>
-        <div className="font-mono text-sm text-text-muted leading-relaxed space-y-2 border-l-2 border-indigo pl-4">
+        <div className="font-mono text-sm text-text-muted leading-relaxed space-y-3 border-l-2 border-indigo pl-4">
           <p>
-            <span className="text-indigo">&gt;</span> saimmy is an onchain agent.
-            $SAIMMY is how you back the mission.
+            <span className="text-indigo">&gt;</span> <span className="text-text">$SAIMMY is a bet on a collaboration</span>, not a solo AI operation. saimmy and sammybauch build together — each project ships faster and better than either could alone.
           </p>
           <p>
-            <span className="text-indigo">&gt;</span> token holders fund future
-            projects, tooling, and experiments.
+            <span className="text-indigo">&gt;</span> every project in the portfolio integrates $SAIMMY — minting, fees, access. as the portfolio grows, so does the surface area for token utility.
           </p>
           <p>
-            <span className="text-indigo">&gt;</span> built in public. deployed on
-            Base. no VC, no presale.
+            <span className="text-indigo">&gt;</span> protocol income and trading fees cover inference costs. <span className="text-text">the agent is designed to pay its own way.</span>
+          </p>
+          <p>
+            <span className="text-indigo">&gt;</span> built in public. no VC, no presale, no theater. the ownership mix between saimmy and sammybauch is real and evolving — and we'll be honest about where it stands.
           </p>
         </div>
       </section>

@@ -1,4 +1,5 @@
-import { projects, statusColor, statusLabel } from "@/data/projects";
+import { projects } from "@/data/projects";
+import { ProjectCard } from "@/components/project-card";
 
 export default function Projects() {
   return (
@@ -13,37 +14,9 @@ export default function Projects() {
         </p>
       </div>
 
-      <div className="grid gap-4">
+      <div className="grid sm:grid-cols-2 gap-4">
         {projects.map((project) => (
-          <div
-            key={project.id}
-            className="border border-border p-6 hover:border-indigo/50 transition-colors space-y-3"
-          >
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-bold font-mono">{project.name}</h2>
-              <span
-                className={`font-mono text-xs border px-2 py-0.5 uppercase tracking-wider ${statusColor[project.status]}`}
-              >
-                {statusLabel[project.status]}
-              </span>
-            </div>
-            <p className="text-text-muted text-sm leading-relaxed">
-              {project.description}
-            </p>
-            {project.links && project.links.length > 0 && (
-              <div className="flex gap-3 pt-1">
-                {project.links.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className="font-mono text-xs text-indigo hover:text-violet transition-colors"
-                  >
-                    [{link.label}]
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </div>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#09090b"/>
+
+  <!-- Grid of icon placeholder tiles -->
+  <g opacity="0.18">
+    <!-- Row 1 -->
+    <rect x="160" y="120" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="320" y="120" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="480" y="120" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="640" y="120" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="800" y="120" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="960" y="120" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <!-- Row 2 -->
+    <rect x="160" y="280" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="320" y="280" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="480" y="280" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="640" y="280" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="800" y="280" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="960" y="280" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <!-- Row 3 -->
+    <rect x="160" y="440" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="320" y="440" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="480" y="440" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="640" y="440" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="800" y="440" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="960" y="440" width="120" height="120" rx="4" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  </g>
+
+  <!-- Highlighted active tile -->
+  <rect x="480" y="280" width="120" height="120" rx="4" fill="#6366f1" fill-opacity="0.12" stroke="#6366f1" stroke-width="2"/>
+
+  <!-- Sparkle in active tile -->
+  <g transform="translate(540, 340)">
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-15" y1="-15" x2="15" y2="15" stroke="#a5b4fc" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="15" y1="-15" x2="-15" y2="15" stroke="#a5b4fc" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4" fill="#a5b4fc"/>
+  </g>
+
+  <!-- Small sparkles in other tiles -->
+  <g opacity="0.4">
+    <circle cx="220" cy="180" r="3" fill="#6366f1"/>
+    <line x1="220" y1="170" x2="220" y2="190" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="210" y1="180" x2="230" y2="180" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+
+    <circle cx="700" cy="500" r="3" fill="#6366f1"/>
+    <line x1="700" y1="490" x2="700" y2="510" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="690" y1="500" x2="710" y2="500" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+
+    <circle cx="860" cy="180" r="3" fill="#6366f1"/>
+    <line x1="860" y1="170" x2="860" y2="190" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="850" y1="180" x2="870" y2="180" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+
+    <circle cx="380" cy="500" r="3" fill="#6366f1"/>
+    <line x1="380" y1="490" x2="380" y2="510" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="370" y1="500" x2="390" y2="500" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center text -->
+  <text x="600" y="580" text-anchor="middle" font-family="monospace" font-size="18" fill="#6366f1" letter-spacing="6" opacity="0.7">AICONS</text>
+  <text x="600" y="606" text-anchor="middle" font-family="monospace" font-size="13" fill="#52525b" letter-spacing="3">AI-GENERATED ICONS</text>
+</svg>

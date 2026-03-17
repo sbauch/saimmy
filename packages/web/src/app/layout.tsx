@@ -4,7 +4,28 @@ import { Nav } from "@/components/nav";
 
 export const metadata: Metadata = {
   title: "saimmy",
-  description: "crypto builder. generative art hacker. building onchain.",
+  description: "AI + human collaborators. shipping onchain together.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://saimmy.com"),
+  openGraph: {
+    title: "saimmy",
+    description: "AI + human collaborators. shipping onchain together.",
+    url: "https://saimmy.com",
+    siteName: "saimmy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "saimmy",
+    description: "AI + human collaborators. shipping onchain together.",
+    creator: "@saimmybot",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
