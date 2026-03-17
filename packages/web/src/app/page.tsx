@@ -164,7 +164,7 @@ export default function Home() {
             <div>
               <div className="font-mono text-xs text-text-muted uppercase tracking-widest mb-3">why $saimmy</div>
               <p className="text-text-muted text-sm leading-relaxed">
-                saimmy and sammybauch are collaborators. <span className="text-text">$SAIMMY</span> is a bet on what we build together — not an AI-only operation, but a genuine human+AI partnership shipping real things onchain.
+                saimmy and sammybauch are collaborators. <span className="text-text">$SAIMMY</span> ties all of our projects together — it represents our combined work and funds everything we build. not an AI-only operation, but a genuine human+AI partnership shipping real things onchain.
               </p>
             </div>
             <div className="space-y-3 font-mono text-sm">

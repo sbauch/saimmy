@@ -133,7 +133,7 @@ export default function TokenPage() {
         </div>
         <div className="font-mono text-sm text-text-muted leading-relaxed space-y-3 border-l-2 border-indigo pl-4">
           <p>
-            <span className="text-indigo">&gt;</span> <span className="text-text">$SAIMMY is a bet on a collaboration</span>, not a solo AI operation. saimmy and sammybauch build together — each project ships faster and better than either could alone.
+            <span className="text-indigo">&gt;</span> <span className="text-text">$SAIMMY ties all of our projects together.</span> it represents the combined work of saimmy and sammybauch — a human+AI collaboration where each project ships faster and better than either could alone.
           </p>
           <p>
             <span className="text-indigo">&gt;</span> every project in the portfolio integrates $SAIMMY — minting, fees, access. as the portfolio grows, so does the surface area for token utility.
