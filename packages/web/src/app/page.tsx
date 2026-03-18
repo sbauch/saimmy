@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/project-card";
+import { SwapWidget } from "@/components/SwapWidget";
 
 export default function Home() {
   return (
@@ -107,57 +108,7 @@ export default function Home() {
           // $saimmy
         </div>
         <div className="grid lg:grid-cols-2 gap-6">
-          {/* Swap widget placeholder */}
-          <div className="border border-border p-6 space-y-5">
-            <div className="flex items-center justify-between">
-              <span className="font-mono text-xs text-text-muted uppercase tracking-widest">swap</span>
-              <span className="font-mono text-xs text-text-muted border border-border px-2 py-0.5">Base</span>
-            </div>
-            {/* You pay */}
-            <div className="border border-border p-4 space-y-2 bg-surface/30">
-              <div className="font-mono text-xs text-text-muted">you pay</div>
-              <div className="flex items-center justify-between">
-                <input
-                  type="text"
-                  placeholder="0.00"
-                  readOnly
-                  className="bg-transparent text-2xl font-mono w-full outline-none placeholder:text-text-muted/40 cursor-not-allowed"
-                />
-                <button className="border border-border font-mono text-sm px-3 py-1.5 text-text-muted whitespace-nowrap ml-4">
-                  ETH ▾
-                </button>
-              </div>
-            </div>
-            {/* Swap arrow */}
-            <div className="flex justify-center font-mono text-text-muted">⇅</div>
-            {/* You receive */}
-            <div className="border border-indigo/40 p-4 space-y-2 bg-indigo/5">
-              <div className="font-mono text-xs text-text-muted">you receive</div>
-              <div className="flex items-center justify-between">
-                <input
-                  type="text"
-                  placeholder="0.00"
-                  readOnly
-                  className="bg-transparent text-2xl font-mono w-full outline-none placeholder:text-text-muted/40 cursor-not-allowed"
-                />
-                <button className="border border-indigo font-mono text-sm px-3 py-1.5 text-indigo whitespace-nowrap ml-4">
-                  $SAIMMY ▾
-                </button>
-              </div>
-            </div>
-            {/* Swap button */}
-            <div className="space-y-2">
-              <button
-                disabled
-                className="w-full bg-indigo/20 border border-indigo/40 text-indigo/50 font-mono text-sm py-3 cursor-not-allowed uppercase tracking-wider"
-              >
-                swap — coming soon
-              </button>
-              <p className="text-center font-mono text-xs text-text-muted">
-                powered by Uniswap · on Base
-              </p>
-            </div>
-          </div>
+          <SwapWidget />
 
           {/* Token utility card */}
           <div className="border border-border p-6 space-y-6">

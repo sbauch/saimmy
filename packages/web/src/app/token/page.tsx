@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SwapWidget } from "@/components/SwapWidget";
 
 const CONTRACT = "0xaE58EbfBE35D4F4a320DFB550fE4d27c0d2A7ba3";
 const BASESCAN_TOKEN = `https://basescan.org/token/${CONTRACT}`;
@@ -77,52 +78,8 @@ export default function TokenPage() {
         <div className="font-mono text-sm text-text-muted tracking-widest uppercase">
           // swap
         </div>
-        <div className="border border-border p-6 space-y-5 max-w-md">
-          <div className="flex items-center justify-between">
-            <span className="font-mono text-sm text-text-muted">Swap</span>
-            <span className="font-mono text-[10px] border border-border text-text-muted px-2 py-0.5 rounded-full">
-              powered by Uniswap (coming soon)
-            </span>
-          </div>
-
-          {/* You pay */}
-          <div className="space-y-2">
-            <div className="text-xs text-text-muted font-mono">You pay</div>
-            <div className="flex items-center gap-3 border border-border p-3">
-              <input
-                type="text"
-                placeholder="0.0"
-                disabled
-                className="bg-transparent font-mono text-lg text-text flex-1 outline-none placeholder:text-text-muted/40"
-              />
-              <button className="font-mono text-xs border border-neon text-neon px-3 py-1.5 hover:bg-neon/10 transition-colors">
-                ETH
-              </button>
-            </div>
-          </div>
-
-          {/* You receive */}
-          <div className="space-y-2">
-            <div className="text-xs text-text-muted font-mono">You receive</div>
-            <div className="flex items-center gap-3 border border-border p-3">
-              <input
-                type="text"
-                placeholder="0.0"
-                disabled
-                className="bg-transparent font-mono text-lg text-text flex-1 outline-none placeholder:text-text-muted/40"
-              />
-              <button className="font-mono text-xs border border-indigo text-indigo px-3 py-1.5 hover:bg-indigo/10 transition-colors">
-                $SAIMMY
-              </button>
-            </div>
-          </div>
-
-          <button className="w-full bg-indigo text-white font-mono text-sm py-3 hover:bg-violet transition-colors">
-            Swap
-          </button>
-          <p className="text-center font-mono text-xs text-text-muted">
-            Connect wallet to swap
-          </p>
+        <div className="max-w-md">
+          <SwapWidget />
         </div>
       </section>
 

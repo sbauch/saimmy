@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nav } from "@/components/nav";
+import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: "saimmy",
@@ -36,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-bg text-text min-h-screen">
+        <Providers>
         <Nav />
         <main className="max-w-5xl mx-auto px-6 py-12">{children}</main>
         <footer className="border-t border-border px-6 py-8 mt-24">
@@ -63,6 +65,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        </Providers>
       </body>
     </html>
   );
