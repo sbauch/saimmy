@@ -4,6 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@uniswap/sdk-core': ^7.12.2
+  '@uniswap/v2-sdk': latest
+  '@uniswap/v3-sdk': latest
+  '@uniswap/v4-sdk': latest
+  '@uniswap/router-sdk': latest
+  '@uniswap/permit2-sdk': latest
+  '@uniswap/universal-router-sdk': latest
+
 importers:
 
   .: {}

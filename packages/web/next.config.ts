@@ -6,6 +6,19 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "frame-src 'self' https://www.geckoterminal.com https://dexscreener.com;",
+          },
+        ],
+      },
+    ]
+  },
 };
 
 export default nextConfig;

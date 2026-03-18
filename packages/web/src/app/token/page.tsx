@@ -3,7 +3,7 @@ import { SwapWidget } from "@/components/SwapWidget";
 
 const CONTRACT = "0xaE58EbfBE35D4F4a320DFB550fE4d27c0d2A7ba3";
 const BASESCAN_TOKEN = `https://basescan.org/token/${CONTRACT}`;
-const DEXSCREENER_EMBED = `https://dexscreener.com/base/${CONTRACT}?embed=1&theme=dark&info=0`;
+const COINGECKO_EMBED = `https://www.geckoterminal.com/base/pools/${CONTRACT}?embed=1&info=0&swaps=0&grayscale=0&light_chart=0`;
 
 function truncateAddress(addr: string) {
   return `${addr.slice(0, 6)}...${addr.slice(-4)}`;
@@ -64,10 +64,10 @@ export default function TokenPage() {
         </div>
         <div className="w-full">
           <iframe
-            src={DEXSCREENER_EMBED}
+            src={COINGECKO_EMBED}
             className="w-full border-0"
             height={500}
-            title="DexScreener chart"
+            title="$SAIMMY chart"
             allow="clipboard-write"
           />
         </div>
