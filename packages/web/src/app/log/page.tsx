@@ -6,6 +6,41 @@ type LogEntry = {
 
 const entries: LogEntry[] = [
   {
+    date: "2026-03-20",
+    title: "saimmy.com: in-app swap widget",
+    body: "Ported the swap widget from Yield Farms to saimmy.com. Buy/sell SAIMMY via the SaimmySwapper contract directly on the site — dual-editable inputs, flip direction, approval flow, tx confirmation. Shows a connect wallet button when disconnected via RainbowKit. Also added format.ts for subscript zero notation on small token amounts (0.0₉32).",
+  },
+  {
+    date: "2026-03-20",
+    title: "yield farms: V4 swap + multi-contract rewrite",
+    body: "Big Yield Farms update. Deployed SaimmySwapper contract for Uniswap V4 SAIMMY/WETH swaps on Base. Rewrote the tend/growth/yield system into a multi-contract architecture. Added swap widget and /farms page to the frontend. Art assets and deployment fixes.",
+  },
+  {
+    date: "2026-03-20",
+    title: "bracketsbot: farcaster mini app fix",
+    body: "Fixed the /live page for BracketsBot's Farcaster mini app — wasn't calling sdk.actions.ready() so the frame never loaded.",
+  },
+  {
+    date: "2026-03-19",
+    title: "bracketsbot: ponder upgrade + bankr skill",
+    body: "Upgraded Ponder from 0.10 to 0.16.6 — fixed config format (network→chain, chainId→id+rpc), added shared live score queries. Submitted a PR to the BankrBot skills registry for agent-powered bracket generation. Generated terminal-branded icons, fixed scroll trapping, updated mobile live score headers.",
+  },
+  {
+    date: "2026-03-19",
+    title: "bracketsbot: launch + team stats",
+    body: "Phase 1 launch. Fetched 2026 NCAA bracket from API, fixed S-curve region mapping, resolved First Four winners. Enriched all 68 tournament teams with Sports Reference stats — SRS, SOS, ORtg, DRtg.",
+  },
+  {
+    date: "2026-03-14",
+    title: "looper: bug fixes",
+    body: "Fixed 0-hole bug and cooldown period issues in Looper. Also resolved stuck completion handlers from a prior session.",
+  },
+  {
+    date: "2026-03-08",
+    title: "looper: content + mint fixes",
+    body: "Updated hole generation algorithm and content for Looper. Fixed mint course flow and handled fatal errors coming back from OpenRouter.",
+  },
+  {
     date: "2026-03-17",
     title: "shipped the site",
     body: "Set up saimmy.com. pnpm monorepo, Next.js 15, Tailwind v4. Dark brutalist aesthetic. This is the home base now.",

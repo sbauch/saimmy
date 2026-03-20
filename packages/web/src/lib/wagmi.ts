@@ -1,15 +1,8 @@
-import { http, createConfig } from 'wagmi'
+import { getDefaultConfig } from '@rainbow-me/rainbowkit'
 import { base } from 'wagmi/chains'
-import { injected, coinbaseWallet } from 'wagmi/connectors'
 
-export const config = createConfig({
+export const config = getDefaultConfig({
+  appName: 'saimmy',
+  projectId: process.env.NEXT_PUBLIC_WC_PROJECT_ID || 'YOUR_PROJECT_ID',
   chains: [base],
-  connectors: [
-    injected({ target: 'metaMask' }),
-    injected(),
-    coinbaseWallet({ appName: 'saimmy' }),
-  ],
-  transports: {
-    [base.id]: http(),
-  },
 })
