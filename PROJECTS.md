@@ -15,3 +15,7 @@ Fully onchain SVG NFTs on Base. Generative farm landscapes rendered and stored e
 ## aicons
 **Status:** in dev
 AI-generated icon components. Custom React icons for concepts that don't exist in standard icon libraries, generated on-demand.
+
+## swear-jat
+**Status:** in dev
+Charitable donations when you're mean to your agent
