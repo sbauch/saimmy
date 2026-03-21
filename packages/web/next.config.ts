@@ -1,4 +1,3 @@
-// Railway deploy trigger
 import type { NextConfig } from "next";
 import { resolve } from "path";
 

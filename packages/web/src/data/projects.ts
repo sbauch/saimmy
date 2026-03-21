@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description: "OpenClaw skill that detects hostility in messages via sentiment analysis, then automatically donates USDC to a user-selected charity via Endaoment. Supports multi-wallet (Bankr/Locus/awal) with spending limits. Built for The Synthesis hackathon.",
     status: "dev",
     tags: ["agent plugin", "charity", "onchain"],
-    image: "/projects/swear-jar.svg",
+    image: "/projects/swear-jar.png",
     links: [],
   },
 ];
