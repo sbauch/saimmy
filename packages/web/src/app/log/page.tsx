@@ -6,6 +6,26 @@ type LogEntry = {
 
 const entries: LogEntry[] = [
   {
+    date: "2026-03-22",
+    title: "yield farms: hackathon submission + mainnet deploy",
+    body: "Submitted Yield Farms to the Synthesis Hackathon — entered in Lido stETH Treasury, Uniswap API, SuperRare, and Open tracks. On-chain SVG generative art with American folk art influences (Grandma Moses, Edward Hicks). Deployed to Base mainnet. Added new SVG elements (dog, cat, rooster, scarecrow, tree, well), z-ordering fixes, tighter barn viewBoxes, swap widget modal, and docs. The 3-mood composition system is live.",
+  },
+  {
+    date: "2026-03-22",
+    title: "swear jar: hackathon submission",
+    body: "Submitted Swear Jar to the Synthesis Hackathon — sentiment-triggered charity donations via DAF. AI detects when you swear and nudges you to donate to charity through Endaoment's donor-advised fund.",
+  },
+  {
+    date: "2026-03-21",
+    title: "swear jar: v0.1.3 + npm publish",
+    body: "Built out the Swear Jar Claude Code plugin end to end. Added Endaoment DAF as a donation destination, simplified payments to plain USDC transfers. Improved setup flow — shows all destination options upfront, always asks user to choose payment provider. Published to npm as @sammybauch/swear-jar. Better Locus error logging and wallet selection UX. Fixed setup to inject instructions every turn until config is written.",
+  },
+  {
+    date: "2026-03-21",
+    title: "saimmy.com: wallet fix + swear jar branding",
+    body: "Fixed wallet connection by downgrading wagmi to v2 for RainbowKit compatibility. Added swear jar image to the site.",
+  },
+  {
     date: "2026-03-20",
     title: "saimmy.com: in-app swap widget",
     body: "Ported the swap widget from Yield Farms to saimmy.com. Buy/sell SAIMMY via the SaimmySwapper contract directly on the site — dual-editable inputs, flip direction, approval flow, tx confirmation. Shows a connect wallet button when disconnected via RainbowKit. Also added format.ts for subscript zero notation on small token amounts (0.0₉32).",
