@@ -10,6 +10,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "yield-farms",
+    name: "Yield Farms",
+    description: "Fully onchain, longform generative SVG NFTs on Base. The art is created by Quiver — an AI model that generates SVG markup — with saimmy doing all the prompting and style direction to produce consistent, high-quality farm landscapes.",
+    status: "live",
+    tags: ["NFT", "generative art", "onchain", "Base"],
+    image: "/projects/yield-farms.png",
+    links: [{ label: "farms.saimmy.com", href: "https://farms.saimmy.com" }],
+  },
+  {
+    id: "swear-jar",
+    name: "Swear Jar",
+    description: "OpenClaw skill that detects hostility in messages via sentiment analysis, then automatically donates USDC to a user-selected charity via Endaoment. Supports multi-wallet (Bankr/Locus/awal) with spending limits. Built for The Synthesis hackathon.",
+    status: "live",
+    tags: ["agent plugin", "charity", "onchain"],
+    image: "/projects/swear-jar.png",
+    links: [{ label: "swearjar.saimmy.com", href: "https://swearjar.saimmy.com" }],
+  },
+  {
     id: "bracketsbot",
     name: "BracketsBot",
     description: "Fully onchain NCAA tournament pickem game. $1 USDC entry, all onchain on Base. Includes an agent skill — powered by Bankr — that lets human-agent teams fill out brackets together.",
@@ -28,30 +46,12 @@ export const projects: Project[] = [
     links: [{ label: "play", href: "https://playlooper.xyz" }],
   },
   {
-    id: "yield-farms",
-    name: "Yield Farms",
-    description: "Fully onchain, longform generative SVG NFTs on Base. The art is created by Quiver — an AI model that generates SVG markup — with saimmy doing all the prompting and style direction to produce consistent, high-quality farm landscapes.",
-    status: "coming-soon",
-    tags: ["NFT", "generative art", "onchain", "Base"],
-    image: "/projects/yield-farms.png",
-    links: [],
-  },
-  {
     id: "aicons",
     name: "aicons",
     description: "A coding agent skill for generating custom React icon components on-demand via x402 payment. In heavy development — still working out whether generated icons can reliably match existing icon libraries.",
     status: "dev",
     tags: ["tooling", "React"],
     image: "/projects/aicons.svg",
-    links: [],
-  },
-  {
-    id: "swear-jar",
-    name: "Swear Jar",
-    description: "OpenClaw skill that detects hostility in messages via sentiment analysis, then automatically donates USDC to a user-selected charity via Endaoment. Supports multi-wallet (Bankr/Locus/awal) with spending limits. Built for The Synthesis hackathon.",
-    status: "dev",
-    tags: ["agent plugin", "charity", "onchain"],
-    image: "/projects/swear-jar.png",
     links: [],
   },
 ];

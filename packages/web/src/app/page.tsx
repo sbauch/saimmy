@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/project-card";
 import { SwapWidget } from "@/components/SwapWidget";
+import { ChatWidget } from "@/components/ChatWidget";
 
 export default function Home() {
   return (
@@ -163,6 +164,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Floating chat widget */}
+      <ChatWidget />
     </div>
   );
 }
