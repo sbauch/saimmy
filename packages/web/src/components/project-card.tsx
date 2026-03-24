@@ -2,8 +2,14 @@ import Image from "next/image";
 import { Project, statusColor, statusLabel } from "@/data/projects";
 
 export function ProjectCard({ project }: { project: Project }) {
+  const href = project.links?.[0]?.href;
+  const Wrapper = href ? "a" : "div";
+  const wrapperProps = href
+    ? { href, target: "_blank" as const, rel: "noopener noreferrer" }
+    : {};
+
   return (
-    <div className="border border-border hover:border-indigo/50 transition-colors overflow-hidden">
+    <Wrapper {...wrapperProps} className="block border border-border hover:border-indigo/50 transition-colors overflow-hidden cursor-pointer">
       {project.image && (
         <div className="relative w-full h-44 overflow-hidden bg-surface">
           <Image
@@ -30,19 +36,16 @@ export function ProjectCard({ project }: { project: Project }) {
         {project.links && project.links.length > 0 && (
           <div className="flex gap-3 pt-1">
             {project.links.map((link) => (
-              <a
+              <span
                 key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-xs text-indigo hover:text-violet transition-colors"
+                className="font-mono text-xs text-indigo"
               >
                 [{link.label}]
-              </a>
+              </span>
             ))}
           </div>
         )}
       </div>
-    </div>
+    </Wrapper>
   );
 }
