@@ -196,7 +196,7 @@ export function SwapWidget() {
     : null;
 
   return (
-    <div className="border border-border bg-bg-card p-5">
+    <div className="border border-border-accent rounded-xl bg-bg-card p-5">
       <div className="mb-4 flex items-center justify-between">
         <span className="font-mono text-xs text-text-muted uppercase tracking-widest">swap</span>
         {priceDisplay && <span className="font-mono text-[10px] text-text-muted">{priceDisplay}</span>}
@@ -209,12 +209,12 @@ export function SwapWidget() {
       )}
 
       {/* From */}
-      <div className="border border-border bg-bg-hover p-3">
+      <div className="border border-border rounded-lg bg-bg-hover p-3">
         <div className="mb-1 flex items-center justify-between">
           <span className="font-mono text-[10px] uppercase tracking-widest text-text-muted">You pay</span>
           <div className="flex items-center gap-1.5">
             <span className="font-mono text-[10px] text-text-muted">{formatBal(fromBalance)} {fromToken}</span>
-            <button onClick={handleMax} className="font-mono text-[10px] font-semibold text-indigo hover:text-violet uppercase transition-colors">Max</button>
+            <button onClick={handleMax} className="font-mono text-[10px] font-semibold text-accent hover:text-accent-hover uppercase transition-colors">Max</button>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -234,7 +234,7 @@ export function SwapWidget() {
       <div className="flex justify-center -my-2 relative z-10">
         <button
           onClick={handleFlip}
-          className="border border-border bg-bg-card p-2 transition-transform hover:rotate-180 hover:border-indigo"
+          className="border border-border rounded-full bg-bg-card p-2 transition-transform hover:rotate-180 hover:border-accent-purple"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-text-muted">
             <path d="M4 6l4-4 4 4" /><path d="M4 10l4 4 4-4" />
@@ -243,7 +243,7 @@ export function SwapWidget() {
       </div>
 
       {/* To */}
-      <div className="border border-border bg-bg-hover p-3">
+      <div className="border border-border rounded-lg bg-bg-hover p-3">
         <div className="mb-1 flex items-center justify-between">
           <span className="font-mono text-[10px] uppercase tracking-widest text-text-muted">You receive</span>
           <span className="font-mono text-[10px] text-text-muted">{formatBal(toBalance)} {toToken}</span>
@@ -287,7 +287,7 @@ export function SwapWidget() {
       {!address ? (
         <button
           onClick={openConnectModal}
-          className="mt-4 w-full border border-indigo bg-indigo py-3 font-mono text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-indigo/80"
+          className="mt-4 w-full border border-accent bg-accent rounded py-3 font-mono text-sm font-bold uppercase tracking-wider text-bg transition-all hover:bg-accent-hover"
         >
           Connect Wallet
         </button>
@@ -295,7 +295,7 @@ export function SwapWidget() {
         <button
           onClick={handleSwap}
           disabled={!poolReady || !inputAmount || parseFloat(inputAmount) <= 0 || insufficientBalance || busy}
-          className="mt-4 w-full border border-indigo bg-indigo py-3 font-mono text-sm font-bold uppercase tracking-wider text-white transition-all hover:bg-indigo/80 disabled:opacity-40 disabled:border-border disabled:bg-transparent disabled:text-text-muted"
+          className="mt-4 w-full border border-accent bg-accent rounded py-3 font-mono text-sm font-bold uppercase tracking-wider text-bg transition-all hover:bg-accent-hover disabled:opacity-40 disabled:border-border disabled:bg-transparent disabled:text-text-muted"
         >
           {busy
             ? (isConfirming ? "Confirming..." : needsApproval ? "Approving..." : "Swapping...")

@@ -18,7 +18,7 @@ export function Nav() {
       <div className="max-w-5xl mx-auto flex items-center justify-between">
         <Link
           href="/"
-          className="font-mono text-lg font-bold tracking-tight text-indigo hover:text-violet transition-colors"
+          className="font-mono text-lg font-bold tracking-tight text-accent hover:text-accent-hover transition-colors"
         >
           saimmy_
         </Link>
@@ -27,13 +27,13 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors hover:text-indigo ${
+              className={`transition-colors hover:text-accent ${
                 link.accent
                   ? pathname === link.href
-                    ? "text-indigo border border-indigo px-2 py-0.5"
-                    : "text-indigo/70 border border-indigo/30 px-2 py-0.5 hover:border-indigo hover:text-indigo"
+                    ? "text-accent-purple border border-accent-purple px-2 py-0.5"
+                    : "text-accent-purple/70 border border-accent-purple/30 px-2 py-0.5 hover:border-accent-purple hover:text-accent-purple"
                   : pathname === link.href
-                    ? "text-indigo"
+                    ? "text-accent"
                     : "text-text-muted"
               }`}
             >

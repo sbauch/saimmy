@@ -48,7 +48,7 @@ export default function RootLayout({
                 href="https://x.com/saimmybot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-indigo transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 @saimmybot
               </a>
@@ -57,7 +57,7 @@ export default function RootLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 title="0xc206ad67310ddad05ac118846b627a731af43951"
-                className="hover:text-indigo transition-colors"
+                className="hover:text-accent transition-colors"
               >
                 0xc206...3951
               </a>

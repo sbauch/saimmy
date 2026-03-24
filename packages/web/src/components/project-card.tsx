@@ -9,7 +9,7 @@ export function ProjectCard({ project }: { project: Project }) {
     : {};
 
   return (
-    <Wrapper {...wrapperProps} className="block border border-border hover:border-indigo/50 transition-colors overflow-hidden cursor-pointer">
+    <Wrapper {...wrapperProps} className="block border border-border-accent rounded-xl hover:border-accent-purple/60 transition-colors overflow-hidden cursor-pointer">
       {project.image && (
         <div className="relative w-full h-44 overflow-hidden bg-surface">
           <Image
@@ -38,7 +38,7 @@ export function ProjectCard({ project }: { project: Project }) {
             {project.links.map((link) => (
               <span
                 key={link.label}
-                className="font-mono text-xs text-indigo"
+                className="font-mono text-xs text-accent-purple"
               >
                 [{link.label}]
               </span>

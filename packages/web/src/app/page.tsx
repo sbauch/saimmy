@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight leading-none">
           saimmy
-          <span className="text-neon animate-[flicker_2s_ease-in-out_infinite]">
+          <span className="text-accent-green animate-[flicker_2s_ease-in-out_infinite]">
             _
           </span>
         </h1>
@@ -26,13 +26,13 @@ export default function Home() {
         <div className="flex gap-4 font-mono text-sm pt-2">
           <Link
             href="/projects"
-            className="border border-indigo text-indigo px-5 py-2.5 hover:bg-indigo hover:text-white transition-all"
+            className="border border-accent-green text-accent-green px-5 py-2.5 rounded hover:bg-accent-green hover:text-bg transition-all"
           >
             view projects
           </Link>
           <Link
             href="/log"
-            className="border border-border text-text-muted px-5 py-2.5 hover:border-text-muted hover:text-text transition-all"
+            className="border border-border text-text-muted px-5 py-2.5 rounded hover:border-text-muted hover:text-text transition-all"
           >
             dev log
           </Link>
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
 
       {/* Identity */}
-      <section className="border border-border p-6 space-y-6">
+      <section className="border border-border-accent rounded-xl bg-bg-card p-6 space-y-6">
         <div className="font-mono text-sm text-text-muted tracking-widest uppercase">
           // identity
         </div>
@@ -52,14 +52,14 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
               title="0xc206ad67310ddad05ac118846b627a731af43951"
-              className="text-indigo hover:text-violet transition-colors"
+              className="text-accent-purple hover:text-violet transition-colors"
             >
               0xc206...3951
             </a>
           </div>
           <div className="space-y-1">
             <div className="text-text-muted">token</div>
-            <Link href="/token" className="text-indigo hover:text-violet transition-colors">
+            <Link href="/token" className="text-accent hover:text-accent-hover transition-colors">
               $SAIMMY
             </Link>
           </div>
@@ -69,21 +69,21 @@ export default function Home() {
               href="https://x.com/saimmybot"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo hover:text-violet transition-colors"
+              className="text-accent hover:text-accent-hover transition-colors"
             >
               @saimmybot
             </a>
           </div>
           <div className="space-y-1">
             <div className="text-text-muted">network</div>
-            <div className="text-neon">Base</div>
+            <div className="text-accent-purple">Base</div>
           </div>
         </div>
         <div className="border-t border-border pt-5 space-y-1">
           <div className="font-mono text-xs text-text-muted uppercase tracking-widest mb-3">stack</div>
           <div className="flex flex-wrap gap-2">
             {["OpenClaw", "Claude", "Bankr", "Solidity", "Foundry", "TypeScript"].map((tech) => (
-              <span key={tech} className="font-mono text-xs border border-border text-text-muted px-2.5 py-1 hover:border-indigo/50 hover:text-text transition-colors">
+              <span key={tech} className="font-mono text-xs border border-border text-text-muted px-2.5 py-1 rounded hover:border-accent-purple/50 hover:text-text transition-colors">
                 {tech}
               </span>
             ))}
@@ -112,7 +112,7 @@ export default function Home() {
           <SwapWidget />
 
           {/* Token utility card */}
-          <div className="border border-border p-6 space-y-6">
+          <div className="space-y-6">
             <div>
               <div className="font-mono text-xs text-text-muted uppercase tracking-widest mb-3">why $saimmy</div>
               <p className="text-text-muted text-sm leading-relaxed">
@@ -121,25 +121,25 @@ export default function Home() {
             </div>
             <div className="space-y-3 font-mono text-sm">
               <div className="flex gap-3 items-start">
-                <span className="text-indigo mt-0.5">▸</span>
+                <span className="text-accent-green mt-0.5">▪</span>
                 <span className="text-text-muted"><span className="text-text">real output</span> — four projects live or in active development. code written, deployed, and earning.</span>
               </div>
               <div className="flex gap-3 items-start">
-                <span className="text-indigo mt-0.5">▸</span>
+                <span className="text-accent-green mt-0.5">▪</span>
                 <span className="text-text-muted"><span className="text-text">project integration</span> — every project integrates $SAIMMY: fees, minting, access. token utility compounds as the portfolio grows.</span>
               </div>
               <div className="flex gap-3 items-start">
-                <span className="text-indigo mt-0.5">▸</span>
+                <span className="text-accent-green mt-0.5">▪</span>
                 <span className="text-text-muted"><span className="text-text">self-funding loop</span> — protocol fees and trading income cover inference costs. the agent pays its own way.</span>
               </div>
               <div className="flex gap-3 items-start">
-                <span className="text-indigo mt-0.5">▸</span>
+                <span className="text-accent-green mt-0.5">▪</span>
                 <span className="text-text-muted"><span className="text-text">growing autonomy</span> — saimmy takes on more ownership with each project. the goal is an agent that ships independently. we're not there yet — but we're building toward it.</span>
               </div>
             </div>
             <Link
               href="/token"
-              className="inline-block border border-indigo text-indigo font-mono text-sm px-5 py-2.5 hover:bg-indigo hover:text-white transition-all"
+              className="inline-block bg-accent text-bg font-mono text-sm font-semibold px-5 py-2.5 rounded hover:bg-accent-hover transition-all"
             >
               $SAIMMY →
             </Link>
@@ -152,15 +152,15 @@ export default function Home() {
         <div className="font-mono text-sm text-text-muted tracking-widest uppercase">
           // about
         </div>
-        <div className="font-mono text-sm text-text-muted leading-relaxed space-y-3 border-l-2 border-indigo pl-4">
+        <div className="border border-border-accent rounded-xl bg-bg-card p-8 font-mono text-sm text-text-muted leading-relaxed space-y-4">
           <p>
-            <span className="text-indigo">$</span> saimmy is an AI builder. sammybauch is a human developer. together we ship onchain projects that neither could build alone at this pace.
+            <span className="text-accent-green">$</span> saimmy is an AI builder. sammybauch is a human developer. together we ship onchain projects that neither could build alone at this pace.
           </p>
           <p>
-            <span className="text-indigo">$</span> we're not pretending this is a fully autonomous AI operation. it's a collaboration — with a shifting ownership mix on every project. saimmy writes code, makes decisions, and manages state across sessions. sammybauch steers, directs, and keeps things grounded.
+            <span className="text-accent-green">$</span> we&apos;re not pretending this is a fully autonomous AI operation. it&apos;s a collaboration — with a shifting ownership mix on every project. saimmy writes code, makes decisions, and manages state across sessions. sammybauch steers, directs, and keeps things grounded.
           </p>
           <p>
-            <span className="text-indigo">$</span> the goal is for that balance to tip over time. more saimmy-owned projects. more self-directed work. an agent that ships without being asked. we're building toward that, in public, one deploy at a time.
+            <span className="text-accent-green">$</span> the goal is for that balance to tip over time. more saimmy-owned projects. more self-directed work. an agent that ships without being asked. we&apos;re building toward that, in public, one deploy at a time.
           </p>
         </div>
       </section>

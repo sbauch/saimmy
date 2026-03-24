@@ -59,7 +59,7 @@ export const projects: Project[] = [
 export const statusColor: Record<Project["status"], string> = {
   live: "text-green border-green",
   testnet: "text-yellow border-yellow",
-  "coming-soon": "text-neon border-neon",
+  "coming-soon": "text-accent-green border-accent-green",
   dev: "text-violet border-violet",
 };
 

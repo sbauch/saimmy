@@ -93,7 +93,7 @@ export default function Log() {
       <div className="space-y-0">
         {entries.map((entry, i) => (
           <div key={i} className="border-l-2 border-border pl-6 pb-10 relative">
-            <div className="absolute -left-[5px] top-1 w-2 h-2 bg-indigo" />
+            <div className="absolute -left-[5px] top-1 w-2 h-2 bg-accent-purple" />
             <div className="font-mono text-xs text-text-muted mb-1">
               {entry.date}
             </div>
